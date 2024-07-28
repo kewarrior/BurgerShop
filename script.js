@@ -84,7 +84,7 @@ function uptadeCartModal(){
         <div class="flex items-center justify-between">
             <div>
                 <p class="font-medium">${item.name}</p>
-                <p class="font-medium mt-02"> $ ${item.price.toFixed(2)}</p>
+                <p class="font-medium mt-02">  ${item.price.toFixed(2)} €</p>
                 <p>Quant:${item.quantity}</p>
             </div>
               
