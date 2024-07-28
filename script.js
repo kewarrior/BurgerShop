@@ -174,7 +174,7 @@ checkoutBtn.addEventListener("click",function (){
 
     const cartItems = cart.map((item) => {
         return(
-            ` ${item.name} Quantidade: (${item.quantity}) Preco: $ ${item.price} | `
+            ` ${item.name} Quantidade: (${item.quantity}) Preco:  ${item.price} € | `
         )
     }).join("")
 
