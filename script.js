@@ -163,7 +163,6 @@ checkoutBtn.addEventListener("click",function (){
             },
         }).showToast();
     }
-    return;
 
     if (cart.length===0) return;
     if (addressInput.value ===""){
