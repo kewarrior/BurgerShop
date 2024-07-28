@@ -162,6 +162,7 @@ checkoutBtn.addEventListener("click",function (){
                 background: "#ef4444",
             },
         }).showToast();
+        return;
     }
 
     if (cart.length===0) return;
@@ -179,7 +180,7 @@ checkoutBtn.addEventListener("click",function (){
     }).join("")
 
     const message = encodeURIComponent(cartItems)
-    const phone = "931921722"
+    const phone = "123456789"
 
     window.open(`https://wa.me/${phone}?text=${message} Endereco: ${addressInput.value}` , "_blank")
 
@@ -194,7 +195,7 @@ checkoutBtn.addEventListener("click",function (){
 function checkRestaurantOpen(){
     const data= new Date();
     const hora =data.getHours();
-    return hora >=12 && 22;
+    return hora >=12 && hora <= 22;
     //true = Restaurante Open
 }
 
